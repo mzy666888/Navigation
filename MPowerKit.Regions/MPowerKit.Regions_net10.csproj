@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net10.0;</TargetFrameworks>
+		<UseMaui>true</UseMaui>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>MPowerKit.Regions</Title>
+		<Version>1.4.2</Version>
+		<Authors>MPowerKit,Alex Dobrynin</Authors>
+		<Description>.NET MAUI MVVM navigation framework. It supports regular/modal navigation, opening/closing windows, regions</Description>
+		<Copyright>MPowerKit</Copyright>
+		<PackageProjectUrl>https://github.com/MPowerKit/Navigation</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/MPowerKit/Navigation</RepositoryUrl>
+		<PackageTags>maui;mvvm;prism;lightmvvm;navigation;region;modal;section</PackageTags>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageReadmeFile>readme.md</PackageReadmeFile>
+		<PackageIcon>icon.png</PackageIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Maui.Controls" VersionOverride="$(MauiVersion)" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\icon.png">
+		  <Pack>True</Pack>
+		  <PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\LICENSE">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\readme.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\MPowerKit.Navigation.Core\MPowerKit.Navigation.Core_net10.csproj" />
+	</ItemGroup>
+
+</Project>
